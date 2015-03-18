@@ -18,3 +18,11 @@ scalac -print ./src/main/scala/com/twitter/scala_impl/LazyVal.scala
 ```
 
 What are some potential pitfalls here?  How else might we implement this?
+
+## Matchers
+
+```bash
+scalac -print ./src/main/scala/com/twitter/scala_impl/Matchers.scala
+```
+
+How is the scala compiler smart here?  Could it be any smarter?
