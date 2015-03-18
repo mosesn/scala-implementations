@@ -10,3 +10,11 @@ scalac -print ./src/main/scala/com/twitter/scala_impl/ForComprehension.scala
 ```
 
 How are different components implemented?
+
+## Lazy Vals
+
+```bash
+scalac -print ./src/main/scala/com/twitter/scala_impl/LazyVal.scala
+```
+
+What are some potential pitfalls here?  How else might we implement this?
