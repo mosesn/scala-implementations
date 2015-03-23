@@ -7,7 +7,7 @@ class ForComprehension {
 
   def map(seq: Seq[Int]): Seq[Int] = for { elt <- seq } yield elt
 
-  def map(seq: Seq[Int]): Seq[Int] = for { elt <- seq if elt % 2 == 0 } yield elt
+  def filteredMap(seq: Seq[Int]): Seq[Int] = for { elt <- seq if elt % 2 == 0 } yield elt
 
   def flatMap(seqOfSeq: Seq[Seq[Int]]): Seq[Int] = for {
     seq <- seqOfSeq
