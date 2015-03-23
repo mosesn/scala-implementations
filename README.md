@@ -49,3 +49,18 @@ javac ./src/main/java/com/twitter/scala_impl/ScarletJavaUsage.java
 ```
 
 How does this work under the hood?
+
+# MicroBenchmarks
+
+MicroBenchmarks are notoriously hard to write, but it's very important to write
+them so that you understand whether your optimizations are actually useful.
+
+What are common pitfalls in writing benchmarks?
+
+Let's try running a benchmark.  You can inspect the code in
+`./src/main/scala/com/twitter/jmh_benchmark/BranchBenchmark.scala`.
+
+You can run it by starting the sbt console (`./sbt`) and while in the console,
+running a benchmark (`run -i 20 -wi 10 -f1 -t1 .*Branch.*`).
+
+Is this what you expected to see?  Why or why not?
